@@ -52,8 +52,23 @@
         <div class="portfolio-item"><img src="golden-apple.jpg" alt="jabłko"></div>
     </section>
     
-    
+    <!-- section#contact>h2{Imię Nazwisko}+address{dane adresowe}+form -->
+    <section id="contact">
+        <h2>Imię Nazwisko</h2>
+        <address>dane adresowe</address><br><br>
+        <form action="/submit" method="post">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="subject">Temat:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+            
+            <label for="message">Wiadomość:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Wyślij">
+        </form>
+    </section>
 
-    
 </body>
 </html>
